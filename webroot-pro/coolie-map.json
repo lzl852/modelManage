@@ -1,0 +1,20 @@
+{
+  "/index.html": {
+    "main": [],
+    "js": [],
+    "css": [
+      {
+        "dest": "/static/css/1c98014b34918f69dbd859734d88a59c.css",
+        "deps": [
+          {
+            "src": "../webroot-dev/css/index.css",
+            "res": [
+              "../webroot-dev/images/body_bg.jpg"
+            ]
+          }
+        ]
+      }
+    ],
+    "res": []
+  }
+}
