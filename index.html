@@ -3,9 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/basic.js"></script>
 </head>
 <body class="body-style">
     <div class="wrapper">
@@ -24,7 +23,7 @@
         </div>
         <!--页头 end-->
         <!--页面主体-->
-        <div class="container clearfix" id="container">
+        <div class="content clearfix" id="container">
             <!--左边导航 start-->
             <div class="fl con-left clearfix">
                 <!--主导航 start-->
@@ -93,13 +92,11 @@
             <!--右边编辑内容 start-->
             <div class="fl con-right">
                 <!--按钮组 start-->
-                <div class="btn-group">
-                    <ul>
-                        <li><a href="#">保存</a></li>
-                        <li><a href="#">清空</a></li>
-                        <li><a href="#">预览</a></li>
-                        <li><a href="#">背景色</a></li>
-                    </ul>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-default">保存</button>
+                    <button type="button" class="btn btn-default">清空</button>
+                    <button type="button" class="btn btn-default">预览</button>
+                    <button type="button" class="btn btn-default">背景色</button>
                 </div>
                 <!-- 按钮组 end -->
             </div>
@@ -114,6 +111,8 @@
         </div>
     </div>
     <!--页脚 end-->
-
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/basic.js"></script>
 </body>
 </html>
