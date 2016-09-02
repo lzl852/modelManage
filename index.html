@@ -4,24 +4,116 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
 </head>
 <body class="body-style">
     <div class="wrapper">
-        <!--header-->
+        <!--页头 start-->
         <div class="header">
-            <h2 class="header-brand">运营模版管理系统</h2>
-            <div class="header-right">
-                <ul class="header-login header-login-before">
-                    <li><a href="#">登录</a></li>
-                    <li><a href="#">注册</a></li>
-                </ul>
-                <ul class="header-login header-login-after hid">
-                    <li>你好，张三 </li>
+            <h2 class="fl header-brand">运营模版管理系统</h2>
+            <div class="fl header-search">
+                <input class="fr input-text" type="text" placeholder="请输入搜索关键字"/>
+            </div>
+            <div class="fr header-right">
+                <ul class="header-login clearfix">
+                    <li>你好，张三三 </li>
+                    <li class="ml20">2016-09-01 10:50:30</li>
                 </ul>
             </div>
         </div>
-        <!--header end-->
-
+        <!--页头 end-->
+        <!--页面主体-->
+        <div class="container clearfix" id="container">
+            <!--左边导航 start-->
+            <div class="fl con-left clearfix">
+                <!--主导航 start-->
+                <ul class="fl con-left-nav">
+                    <li><a href="#">模板</a></li>
+                    <li><a href="#">模板2</a></li>
+                </ul>
+                <!--主导航 end-->
+                <!--模板选择 start-->
+                <div class="fl con-left-bd">
+                    <div class="con-left-bd-main">
+                        <ul class="con-left-bd-main-nav clearfix">
+                            <li class="active"><a href="#">默认模板</a></li>
+                            <li><a href="#">个人模板</a></li>
+                            <li><a href="#">收藏模板</a></li>
+                        </ul>
+                        <div class="con-left-bd-main-wrap" id="picWrapper">
+                            <ul class="con-left-bd-main-box clearfix">
+                                <li >
+                                    <div class="img-box"><img src="images/mode_01.jpg"/></div>
+                                    <div class="img-mask hid">
+                                        <div class="img-mask-box">
+                                            <h3>活动简介</h3><i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-box"><img src="images/mode_02.jpg"/></div>
+                                    <div class="img-mask hid">
+                                        <div class="img-mask-box">
+                                            <h3>产品</h3><i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-box"><img src="images/mode_03.jpg"/></div>
+                                    <div class="img-mask hid">
+                                        <div class="img-mask-box">
+                                            <h3>活动简介</h3><i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li >
+                                    <div class="img-box"><img src="images/mode_04.jpg"/></div>
+                                    <div class="img-mask hid">
+                                        <div class="img-mask-box">
+                                            <h3>活动简介</h3><i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li >
+                                    <div class="img-box"><img src="images/mode_05.jpg"/></div>
+                                    <div class="img-mask hid">
+                                        <div class="img-mask-box">
+                                            <h3>活动简介</h3><i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--模板选择 end-->
+            </div>
+            <!--左边导航 end-->
+            <!--右边编辑内容 start-->
+            <div class="fl con-right">
+                <!--按钮组 start-->
+                <div class="btn-group">
+                    <ul>
+                        <li><a href="#">保存</a></li>
+                        <li><a href="#">清空</a></li>
+                        <li><a href="#">预览</a></li>
+                        <li><a href="#">背景色</a></li>
+                    </ul>
+                </div>
+                <!-- 按钮组 end -->
+            </div>
+            <!--右边编辑内容 end-->
+        </div>
+        <!--页面主体 end-->
     </div>
+    <!--页脚-->
+    <div class="footer">
+        <div class="wrapper">
+            <p class="copyright">技术支持：鑫合汇用户体验部</p>
+        </div>
+    </div>
+    <!--页脚 end-->
+
 </body>
 </html>
