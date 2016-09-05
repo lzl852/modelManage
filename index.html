@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ZH">
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.min93e3.css" type="text/css"/>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
 </head>
 <body class="body-style">
@@ -28,62 +29,78 @@
             <div class="fl con-left clearfix">
                 <!--主导航 start-->
                 <ul class="fl con-left-nav">
-                    <li><a href="#">模板</a></li>
-                    <li><a href="#">模板2</a></li>
+                    <li class="active"><a href="#mode1" data-toggle="tab">模板</a></li>
+                    <li><a href="#mode2" data-toggle="tab">模板2</a></li>
                 </ul>
                 <!--主导航 end-->
                 <!--模板选择 start-->
-                <div class="fl con-left-bd">
-                    <div class="con-left-bd-main">
-                        <ul class="con-left-bd-main-nav clearfix">
-                            <li class="active"><a href="#">默认模板</a></li>
-                            <li><a href="#">个人模板</a></li>
-                            <li><a href="#">收藏模板</a></li>
-                        </ul>
-                        <div class="con-left-bd-main-wrap" id="picWrapper">
-                            <ul class="con-left-bd-main-box clearfix">
-                                <li >
-                                    <div class="img-box"><img src="images/mode_01.jpg"/></div>
-                                    <div class="img-mask hid">
-                                        <div class="img-mask-box">
-                                            <h3>活动简介</h3><i></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img-box"><img src="images/mode_02.jpg"/></div>
-                                    <div class="img-mask hid">
-                                        <div class="img-mask-box">
-                                            <h3>产品</h3><i></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img-box"><img src="images/mode_03.jpg"/></div>
-                                    <div class="img-mask hid">
-                                        <div class="img-mask-box">
-                                            <h3>活动简介</h3><i></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li >
-                                    <div class="img-box"><img src="images/mode_04.jpg"/></div>
-                                    <div class="img-mask hid">
-                                        <div class="img-mask-box">
-                                            <h3>活动简介</h3><i></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li >
-                                    <div class="img-box"><img src="images/mode_05.jpg"/></div>
-                                    <div class="img-mask hid">
-                                        <div class="img-mask-box">
-                                            <h3>活动简介</h3><i></i>
-                                        </div>
-                                    </div>
-                                </li>
+                <div class="fl con-left-bd" id="pane1">
+                    <div class="tab-content">
+                        <!--模板 start-->
+                        <div class="tab-pane active con-left-bd-main" id="mode1">
+                            <ul class="nav nav-tabs con-left-bd-main-nav clearfix">
+                                <li class="active"><a href="#style1" data-toggle="tab">默认模板</a></li>
+                                <li><a href="#style2" data-toggle="tab">个人模板</a></li>
+                                <li><a href="#style3" data-toggle="tab">收藏模板</a></li>
                             </ul>
+                            <div class="tab-content con-left-bd-main-wrap" id="picWrapper">
+                                <div class="tab-pane active" id="style1">
+                                    <ul class="con-left-bd-main-box clearfix">
+                                        <li >
+                                            <div class="img-box"><img src="images/mode_01.jpg"/></div>
+                                            <div class="img-mask hid">
+                                                <div class="img-mask-box">
+                                                    <h3>活动简介</h3>
+                                                    <i class="fa fa-file-text-o" data-toggle="tooltip" data-placement="bottom" title="插入编辑器"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img-box"><img src="images/mode_02.jpg"/></div>
+                                            <div class="img-mask hid">
+                                                <div class="img-mask-box">
+                                                    <h3>产品</h3>
+                                                    <i class="fa fa-file-text-o" data-toggle="tooltip" data-placement="bottom" title="插入编辑器"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img-box"><img src="images/mode_03.jpg"/></div>
+                                            <div class="img-mask hid">
+                                                <div class="img-mask-box">
+                                                    <h3>活动简介</h3>
+                                                    <i class="fa fa-file-text-o" data-toggle="tooltip" data-placement="bottom" title="插入编辑器"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li >
+                                            <div class="img-box"><img src="images/mode_04.jpg"/></div>
+                                            <div class="img-mask hid">
+                                                <div class="img-mask-box">
+                                                    <h3>活动简介</h3>
+                                                    <i class="fa fa-file-text-o" data-toggle="tooltip" data-placement="bottom" title="插入编辑器"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li >
+                                            <div class="img-box"><img src="images/mode_05.jpg"/></div>
+                                            <div class="img-mask hid">
+                                                <div class="img-mask-box">
+                                                    <h3>活动简介</h3>
+                                                    <i class="fa fa-file-text-o" data-toggle="tooltip" data-placement="bottom" title="插入编辑器"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="style2">个人模板</div>
+                                <div class="tab-pane" id="style3">收藏模板</div>
+                            </div>
                         </div>
+                        <!--模板 end-->
+                        <!--模板2 start-->
+                        <div class="tab-pane" id="mode2">模板2</div>
+                        <!--模板2 end-->
                     </div>
                 </div>
                 <!--模板选择 end-->
@@ -91,12 +108,15 @@
             <!--左边导航 end-->
             <!--右边编辑内容 start-->
             <div class="fl con-right">
+                <div id="rightContent">
+
+                </div>
                 <!--按钮组 start-->
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-default">保存</button>
-                    <button type="button" class="btn btn-default">清空</button>
-                    <button type="button" class="btn btn-default">预览</button>
-                    <button type="button" class="btn btn-default">背景色</button>
+                <div class="btn-group-vertical right-sidebar">
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-html="true" data-container="body" data-placement="right" title data-original-title="设置页面<br/>背景颜色" ><i class="fa fa-eye"></i> 背景色</button>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-html="true" data-container="body" data-placement="right" title data-original-title="保存前可<br/>以先预览" ><i class="fa fa-search"></i>  预览</button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-save"></i>  保存</button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-trash"></i>  清空</button>
                 </div>
                 <!-- 按钮组 end -->
             </div>
@@ -114,5 +134,9 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/basic.js"></script>
+<script type="text/javascript" src="js/jscroll.js"></script><!--scroll滚动条插件-->
+<script type="text/javascript" src="js/ueditor/ueditor.config.js"></script><!--编辑器基本配置-->
+<script type="text/javascript" src="js/ueditor/ueditor.all.js"></script><!--编辑器完整代码-->
+
 </body>
 </html>
