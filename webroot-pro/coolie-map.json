@@ -1,10 +1,59 @@
 {
   "/index.html": {
     "main": [],
-    "js": [],
+    "js": [
+      {
+        "dest": "/static/js/c91e1b71a80dea21bed0b3c0ff2574a7.js",
+        "deps": [
+          "../webroot-dev/js/jquery.min.js"
+        ]
+      },
+      {
+        "dest": "/static/js/b9b4c0f2b4930bae39d32a176cb2495f.js",
+        "deps": [
+          "../webroot-dev/js/bootstrap.min.js"
+        ]
+      },
+      {
+        "dest": "/static/js/dedb2d8ef604768868878ea764091a68.js",
+        "deps": [
+          "../webroot-dev/js/basic.js"
+        ]
+      }
+    ],
     "css": [
       {
-        "dest": "/static/css/1c98014b34918f69dbd859734d88a59c.css",
+        "dest": "/static/css/36852c2ba6cea7989745cf933724db3e.css",
+        "deps": [
+          {
+            "src": "../webroot-dev/css/bootstrap.css",
+            "res": [
+              "../webroot-dev/fonts/glyphicons-halflings-regular.eot",
+              "../webroot-dev/fonts/glyphicons-halflings-regular.woff",
+              "../webroot-dev/fonts/glyphicons-halflings-regular.ttf",
+              "../webroot-dev/fonts/glyphicons-halflings-regular.svg"
+            ]
+          }
+        ]
+      },
+      {
+        "dest": "/static/css/5e8595f00373cdd723d914d7ef8c51f2.css",
+        "deps": [
+          {
+            "src": "../webroot-dev/css/font-awesome.min93e3.css",
+            "res": [
+              "../webroot-dev/fonts/fontawesome-webfont93e3.eot",
+              "../webroot-dev/fonts/fontawesome-webfontd41d.eot",
+              "../webroot-dev/fonts/fontawesome-webfont93e3.woff2",
+              "../webroot-dev/fonts/fontawesome-webfont93e3.woff",
+              "../webroot-dev/fonts/fontawesome-webfont93e3.ttf",
+              "../webroot-dev/fonts/fontawesome-webfont93e3.svg"
+            ]
+          }
+        ]
+      },
+      {
+        "dest": "/static/css/262ae89a2003680a9ee37b1c006a2bdc.css",
         "deps": [
           {
             "src": "../webroot-dev/css/index.css",
@@ -15,6 +64,12 @@
         ]
       }
     ],
-    "res": []
+    "res": [
+      "../webroot-dev/images/mode_01.jpg",
+      "../webroot-dev/images/mode_02.jpg",
+      "../webroot-dev/images/mode_03.jpg",
+      "../webroot-dev/images/mode_04.jpg",
+      "../webroot-dev/images/mode_05.jpg"
+    ]
   }
 }
