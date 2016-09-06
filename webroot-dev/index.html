@@ -2,10 +2,13 @@
 <html>
 <head lang="ZH">
     <meta charset="UTF-8">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge”>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>运营模板</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/font-awesome.min93e3.css" type="text/css"/>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <link rel="stylesheet" href="js/pickacolor/pick-a-color-1.2.3.min.css" type="text/css"/>
 </head>
 <body class="body-style">
     <div class="wrapper">
@@ -132,7 +135,7 @@
                 </div>
                 <!--按钮组 start-->
                 <div class="btn-group-vertical right-sidebar">
-                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-html="true" data-container="body" data-placement="right" title data-original-title="设置页面<br/>背景颜色" ><i class="fa fa-eye"></i> 背景色</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#setColor" ><i class="fa fa-eye"></i> 背景色</button>
                     <button type="button" class="btn btn-default" data-toggle="tooltip" data-html="true" data-container="body" data-placement="right" title data-original-title="保存前可<br/>以先预览" ><i class="fa fa-search"></i>  预览</button>
                     <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-save"></i>  保存</button>
                     <button type="button" class="btn btn-default"><i class="fa fa-trash"></i>  清空</button>
@@ -150,11 +153,38 @@
         </div>
     </div>
     <!--页脚 end-->
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="setColor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       设置页面主体背景颜色
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" value="选择颜色" name="border-color" class="pick-a-color form-control" id="pickaColor">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        提交更改
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/basic.js"></script>
-<!--<script type="text/javascript" src="js/jscroll.js"></script>--><!--scroll滚动条插件-->
-    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script><!--滚动条美化-->
+<script type="text/javascript" src="js/pickacolor/tinycolor-0.9.15.min.js"></script><!--颜色选择器依赖插件-->
+ <script type="text/javascript" src="js/pickacolor/pick-a-color-1.2.3.min.js"></script><!--颜色选择器插件-->
 <script type="text/javascript" src="js/ueditor/ueditor.config.js"></script><!--编辑器基本配置-->
 <script type="text/javascript" src="js/ueditor/ueditor.all.js"></script><!--编辑器完整代码-->
 </body>

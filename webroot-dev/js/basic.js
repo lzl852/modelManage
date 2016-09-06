@@ -1,10 +1,6 @@
-
-
 window.onload = function () {
     window.onresize = setHeight;
     setHeight();
-
-
 };
 
 $(function(){
@@ -16,7 +12,7 @@ $(function(){
     },function(){
         $(this).find('.img-mask').css('display','none');
     });
-
+   /* 美化滚动条*/
     $('#pane1').niceScroll({
         cursorcolor: "#ccc",//#CC0071 光标颜色
         cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
@@ -26,7 +22,18 @@ $(function(){
         cursorborderradius: "5px",//以像素为光标边界半径
         autohidemode: false //是否隐藏滚动条
     });
-
+    /*颜色选择器*/
+    $("#pickaColor").pickAColor({
+        showSpectrum : true,
+        showSavedColors : true,
+        saveColorsPerElement : true,
+        fadeMenuToggle : true,
+        showAdvanced : true,
+        showBasicColors : true,
+        showHexInput : true,
+        allowBlank	 : true,
+        inlineDropdown : true
+    });
     var current_editor = UE.getEditor('rightContent', {
         autoHeightEnabled:false
     });
