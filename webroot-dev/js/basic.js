@@ -46,16 +46,12 @@ function setHeight(){
     var footerHeight = $('.footer').height();
     var conHeight = winHeight - headerHeight - footerHeight;
     $('#container').height(conHeight - 10);
+    $('.con-left-nav').height($('#container').height()-20);
     $('#picWrapper').height($('#container').height() - $('.con-left-bd-main-nav').outerHeight(true));
     $('#pane1').height($('#container').height());
+    $('.con-right').height($('#container').height());
+ /*   $('#edui1_iframeholder').height($('#container').height() - $('#edui1_toolbarbox').height() - $('#edui1_bottombar').height());*/
 
-   /* $('#edui1').height($('#container').height());
-    $('#edui1_iframeholder').height($('#container').height() - $('#edui1_toolbarbox').height() - $('#edui1_bottombar').height());*/
 
-/*    console.log("#container:"+$('#container').height()
-     + "; #picWrapper:"+$('#picWrapper').height()
-     +"; #pane1:"+$('#pane1').height()
-     +"; #edui1:"+$('#edui1').height()
-     +"; #edui1_iframeholder:"+$('#edui1_iframeholder').height());*/
 
 }
