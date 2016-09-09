@@ -55,7 +55,7 @@ define(function (require, exports, module){
             var mask = "<div class=\"img-mask\">"
                          +"<div class=\"img-mask-box\">"
                          +"<h3 class=\"img-mask-name\">"+ _name +"</h3>"
-                         +"<i class=\"fa fa-file-text-o\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"插入编辑器\"></i>"
+                         +"<i class=\"fa fa-file-text-o icon_edit\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"插入编辑器\"></i>"
                          +"</div></div>";
 
             $("#style1>ul>li").hover(function(){
@@ -65,7 +65,11 @@ define(function (require, exports, module){
                 _this.find(".img-mask-name").text(mode_name);
             },function(){
                 $(this).find(".img-mask").remove();
-            })
+            });
+            $("ul.con-left-bd-main-box").on("click",".icon_edit",function(e){
+              console.log($(this).parents('li').html());
+              //  console.log(e.target.tagName);
+            });
         }
     };
     module.exports = Modes;
