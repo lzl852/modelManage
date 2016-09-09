@@ -1,0 +1,24 @@
+{
+    "modes": [
+        {
+            "mode_name":"活动简介",
+            "mode_img":"images/mode_01.jpg"
+        },
+        {
+            "mode_name":"产品简介",
+            "mode_img":"images/mode_02.jpg"
+        },
+        {
+            "mode_name":"优惠券",
+            "mode_img":"images/mode_03.jpg"
+        },
+        {
+            "mode_name":"排行榜",
+            "mode_img":"images/mode_04.jpg"
+        },
+        {
+            "mode_name":"抽奖",
+            "mode_img":"images/mode_05.jpg"
+        }
+    ]
+}
