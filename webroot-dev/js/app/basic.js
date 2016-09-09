@@ -70,5 +70,5 @@
       }
     }
 
-    module.exports = Basic;
+      module.exports = Basic;
   });

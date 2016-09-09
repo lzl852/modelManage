@@ -49,7 +49,7 @@ input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { color: #c
 .con-left-bd-main-box li{ float: left; width: 180px; height: 180px; margin:0 0 10px 10px; box-shadow: 0 0 3px rgb(170, 170, 170); position: relative; overflow: hidden; }
 .con-left-bd-main-box .img-box{ box-sizing: border-box; padding: 5px;}
 .con-left-bd-main-box .img-box img{ vertical-align: middle; width: 100%;}
-.con-left-bd-main-box .img-mask{position: absolute; left: 0; top: 0; width: 180px; height: 180px; background: rgba(0, 0, 0, 0.298039); }
+.con-left-bd-main-box .img-mask{position: absolute; left: 0; top: 0; width: 180px; height: 180px; background: rgba(0, 0, 0, 0.298039); display: table; }
 .con-left-bd-main-box .img-mask-box{vertical-align:middle; display:table-cell; text-align:center;}
 .con-left-bd-main-box .img-mask-box h3{  color: #fff; font-size: 14px;}
 .con-left-bd-main-box .img-mask-box i{ display: block;  margin: 3px auto; color: #fff; font-size: 32px; cursor: pointer;}
