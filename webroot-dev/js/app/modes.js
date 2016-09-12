@@ -90,7 +90,7 @@ define(function (require, exports, module) {
                 dataType: "json",
                 success: function (data) {
                     // 2、插入uedit
-                    console.log(data);//TODO:待完成
+                    console.log(data.htm);//TODO:待完成
                 }
             })
 
