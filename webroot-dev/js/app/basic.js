@@ -8,7 +8,6 @@
       initialize: function () {
         var _self = this;
         window.onresize = _self._setHeight();
-        console.info(_self);
         _self._beautify();
         _self._setHeight();
         _self._uEditor();
@@ -60,15 +59,17 @@
       },
       /*实例化编辑器*/
       _uEditor: function () {
-        var ue = UE.getEditor('rightContent', {
-          toolbars: [
-            ['undo', 'redo']
-          ],
-          autoHeightEnabled: true,
-          autoFloatEnabled: true
-        });
+        // var ue = UE.getEditor('rightContent', {
+        //   toolbars: [
+        //     ['source','undo', 'redo']
+        //   ],
+        //   autoHeightEnabled: true,
+        //   autoFloatEnabled: true
+        // });
+        // var html ="<i >ddd</i>";
+        // ue.execCommand('inserthtml',html)
       }
     }
 
-      module.exports = Basic;
+    module.exports=Basic;
   });
