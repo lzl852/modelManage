@@ -9967,7 +9967,7 @@ var LocalStorage = UE.LocalStorage = (function () {
 UE.plugins['defaultfilter'] = function () {
     var me = this;
     me.setOpt({
-        'allowDivTransToP':true,
+        'allowDivTransToP':false,
         'disabledTableInTable':true
     });
     //默认的过滤处理
@@ -9995,7 +9995,7 @@ UE.plugins['defaultfilter'] = function () {
                     return;
                 }
                 switch (node.tagName) {
-                    case 'style':
+                    /*case 'style':
                     case 'script':
                         node.setAttr({
                             cdata_tag: node.tagName,
@@ -10004,7 +10004,7 @@ UE.plugins['defaultfilter'] = function () {
                         });
                         node.tagName = 'div';
                         node.innerHTML('');
-                        break;
+                        break;*/
                     case 'a':
                         if (val = node.getAttr('href')) {
                             node.setAttr('_href', val)
@@ -10102,7 +10102,7 @@ UE.plugins['defaultfilter'] = function () {
                     case 'dd':
                         node.tagName = 'li';
                         break;
-                    case 'li':
+                    /*case 'li':
                         var className = node.getAttr('class');
                         if (!className || !/list\-/.test(className)) {
                             node.setAttr()
@@ -10111,7 +10111,7 @@ UE.plugins['defaultfilter'] = function () {
                         UE.utils.each(tmpNodes, function (n) {
                             node.parentNode.insertAfter(n, node);
                         });
-                        break;
+                        break;*/
                     case 'td':
                     case 'th':
                     case 'caption':
@@ -11181,7 +11181,7 @@ UE.commands['insertimage'] = {
             } else {
                 for (var i = 0; ci = opt[i++];) {
                     unhtmlData(ci);
-                    str = '<p ' + (ci['floatStyle'] == 'center' ? 'style="text-align: center" ' : '') + '><img src="' + ci.src + '" ' +
+                    str = '<img src="' + ci.src + '" ' +
                         (ci.width ? 'width="' + ci.width + '" ' : '') + (ci._src ? ' _src="' + ci._src + '" ' : '') +
                         (ci.height ? ' height="' + ci.height + '" ' : '') +
                         ' style="' + (ci['floatStyle'] && ci['floatStyle'] != 'center' ? 'float:' + ci['floatStyle'] + ';' : '') +

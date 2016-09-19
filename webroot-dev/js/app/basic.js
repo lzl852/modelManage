@@ -59,13 +59,16 @@
       },
       /*实例化编辑器*/
       _uEditor: function () {
-        // var ue = UE.getEditor('rightContent', {
-        //   toolbars: [
-        //     ['source','undo', 'redo']
-        //   ],
-        //   autoHeightEnabled: true,
-        //   autoFloatEnabled: true
-        // });
+        var ue = UE.getEditor('rightContent', {
+         /* toolbars: [
+            ['source','undo', 'redo']
+          ],*/
+          autoHeightEnabled: false,
+          autoFloatEnabled: true,
+          initialFrameWidth: '100%',
+          initialFrameHeight:'436'
+        });
+
         // var html ="<i >ddd</i>";
         // ue.execCommand('inserthtml',html)
       }

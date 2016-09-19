@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>运营模板</title>
+    <link rel="stylesheet" type="text/css" href="style/base.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/lottery.js"></script>
+</head>
+<body>
+<div class="page">
+    <!--header-->
+    <header class="header">
+        <a class="logo" href="#">
+            <img src="images/logo.png" alt="鑫合汇"/>
+        </a>
+    </header>
+    <!--header end-->
+    <!--banner-->
+    <div class="banner">
+        <img src="images/banner.jpg" alt="banner"/>
+    </div>
+    <!--banner end-->
+    <!--内容区-->
+    <div class="container">
+        <!--简介-->
+        <div class="item intro">
+            <div class="hd"><span id="introTitle">活动介绍标题</span></div>
+            <div class="bd">
+                <p class="normal" id="introCon">什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档</p>
+               <div class="biger">
+                   <p id="introAd">名额有限，先到先得！<br/>预约提醒，助你一臂之力！</p>
+               </div>
+                <a href="javascript:void (0);" class="btn_yellow">成为鑫拍档</a>
+            </div>
+        </div>
+        <!--简介 end-->
+        <!--产品-->
+        <div class="item product">
+            <div class="hd"><span>产品详情标题</span></div>
+            <div class="pro_mode1 clearfix">
+                <div class="pro_item">
+                    <h2 class="pro_name">产品名称</h2>
+                    <p class="pro_num"><span>10</span>%</p>
+                    <p class="pro_shouyi">最高年化收益率</p>
+                    <ul class="pro_detail">
+                        <li>期限：<span>3个月</span></li>
+                        <li>起投：<span>1000元</span></li>
+                        <li>还款：<span>到期还本付息</span></li>
+                    </ul>
+                    <a href="javascript:void (0);" class="btn_yellow">立即投资</a>
+                </div>
+                <div class="pro_item">
+                    <h2 class="pro_name">产品名称</h2>
+                    <p class="pro_num">
+                        <span>10</span>%
+                        <i class="icon_gongyi"></i>
+                    </p>
+                    <p class="pro_shouyi">最高年化收益率</p>
+                    <ul class="pro_detail">
+                        <li>期限：<span>3个月</span></li>
+                        <li>起投：<span>1000元</span></li>
+                        <li>还款：<span>到期还本付息</span></li>
+                    </ul>
+                    <a href="javascript:void (0);" class="btn_yellow">立即投资</a>
+                </div>
+            </div>
+            <div class="pro_mode2 clearfix">
+                <div class="pro_item mode2_left">
+                    <h2 class="pro_name">产品名称</h2>
+                    <p class="pro_num">
+                        <span>10</span>%
+                    </p>
+                    <p class="pro_shouyi">最高年化收益率</p>
+                </div>
+                <div class="pro_item mode2_right">
+                    <i class="icon_mode2_gongyi"></i>
+                    <ul class="pro_detail">
+                        <li>期限：<span>3个月</span></li>
+                        <li>起投：<span>1000元</span></li>
+                        <li>还款：<span>到期还本付息</span></li>
+                    </ul>
+                    <a href="javascript:void (0);" class="btn_yellow">立即投资</a>
+                </div>
+            </div>
+        </div>
+        <!--产品 end-->
+        <!--优惠券-->
+        <div class="item coupon">
+            <i class="edit" id="editCoupon"></i>
+            <i class="del"></i>
+            <div class="hd"><span>抵用券标题</span></div>
+            <div class="coupon_bd">
+                <p class="text_explain">新注册用户立获4张总值500元的满减券！</p>
+                <div class="coupon_box">
+                    <div class="coupon_left">
+                        <div class="coupon_left_wrap">
+                            <span class="coupon_name">拉手抵用券</span>
+                            <p class="coupon_sum"><strong>200</strong></p>
+                            <span class="yuan">元</span>
+                        </div>
+                    </div>
+                    <div class="coupon_right">
+                        <div class="coupon_right_wrap">
+                            <p class="coupon_rule"><span>投资满500元减10元<br/>投资满1000元减50元<br/></span><small>全场通用</small></p>
+                            <a class="btn_yellow btn_red" href="javascript:void (0);">立即领取</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coupon_note">
+                    <h2>活动规则</h2>
+                    <p>1.活动期间，不同鑫值的鑫合汇投资用户可获赠1-10次不等的可推荐次数，登陆后可在活动页查看。<br/>2.活动期间，推荐新投资用户注册并完成投资，推荐人即可获得20元红包。<br/> 3.本次活动的最终解释权归鑫合汇所有。</p>
+                </div>
+            </div>
+        </div>
+        <!--优惠券 end-->
+        <!--排行榜-->
+        <div class="item charts">
+            <div class="hd"><span>排行榜标题</span></div>
+            <div class="bd">
+                <table class="charts_table">
+                    <thead>
+                    <tr>
+                        <th width="20%">排名</th>
+                        <th width="30%">用户名</th>
+                        <th width="50%">累计投资金额</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>NO.1</td>
+                        <td>谁谁谁</td>
+                        <td>69865.88</td>
+                    </tr>
+                    <tr>
+                        <td>NO.2</td>
+                        <td>谁谁谁</td>
+                        <td>69865.88</td>
+                    </tr>
+                    <tr>
+                        <td>NO.3</td>
+                        <td>谁谁谁</td>
+                        <td>69865.88</td>
+                    </tr>
+                    <tr>
+                        <td>NO.4</td>
+                        <td>谁谁谁</td>
+                        <td>69865.88</td>
+                    </tr>
+                    <tr>
+                        <td>NO.5</td>
+                        <td>谁谁谁</td>
+                        <td>69865.88</td>
+                    </tr>
+                    <tr>
+                        <td>NO.6</td>
+                        <td>谁谁谁</td>
+                        <td>69865.88</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="charts_text">温馨提醒：新注册用户立获4张总值500元的满减券！</p>
+            </div>
+        </div>
+        <!--排行榜 end-->
+        <!--抽奖-->
+        <div class="item lottery">
+            <div class="hd"><span>抽奖标题</span></div>
+            <div class="bd">
+            <p class="lot_intr">活动期间，不同鑫值的鑫合汇投资用户可获赠1-10次不等的可推荐次数，登陆后可在活动页</p>
+            <div class="turntable">
+                <img class="turntable_bg" src="images/turntable.png"/>
+                <div class="turntable_box">
+                    <div class="turntable_reslut prize0 hid">
+                        <img src="images/prizeresult_cdb.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <div class="turntable_reslut prize1 hid">
+                        <img src="images/prizeresult_ip.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <div class="turntable_reslut prize2 hid">
+                        <img src="images/prizeresult_2.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <div class="turntable_reslut prize3 hid">
+                        <img src="images/prizeresult_dsn.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <div class="turntable_reslut prize4 hid">
+                        <img src="images/prizeresult_up.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <div class="turntable_reslut prize5 hid">
+                        <img src="images/prizeresult_10.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <div class="turntable_reslut prize6 hid">
+                        <img src="images/prizeresult_hb20.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <div class="turntable_reslut prize7 hid">
+                        <img src="images/prizeresult_5.png"/>
+                        <em class="turntable_reslut_close"></em>
+                    </div>
+                    <ul class="turntable_layer clearfix" id="lottery">
+                        <li class="lottery_unit lottery_unit0 "><img src="images/jp1.png"/></li>
+                        <li class="lottery_unit lottery_unit1"><img src="images/jp2.png"/></li>
+                        <li class="lottery_unit lottery_unit2"><img src="images/jp3.png"/></li>
+                        <li class="lottery_unit lottery_unit7"><img src="images/jp4.png"/></li>
+                        <li class="lottery_unit lottery_btn"><img src="images/kong.png"/>
+                            <div class="btnbox_wrap">
+                                <p class="lottery_start"><span id="activitybeiginbutton">点击抽奖</span></p>
+                                <p class="lottery_start_tip">您拥有2次抽奖机会</p>
+                            </div>
+                        </li>
+                        <li class="lottery_unit lottery_unit3"><img src="images/jp5.png" alt=""/></li>
+                        <li class="lottery_unit lottery_unit6"><img src="images/jp6.png" alt=""/></li>
+                        <li class="lottery_unit lottery_unit5"><img src="images/jp7.png" alt=""/></li>
+                        <li class="lottery_unit lottery_unit4"><img src="images/jp8.png" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--抽奖 end-->
+    </div>
+    <!--内容区 end-->
+</div>
+</body>
+</html>
