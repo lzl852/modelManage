@@ -35,6 +35,7 @@ module.exports = function (coolie) {
       main: [
         // 支持 glob 语法
         //'./static/js/main/**/*.js'
+        'main.js'
       ],
       // coolie-config.js 路径，相对于当前文件
       //'coolie-config.js': './static/js/coolie-config.js',
@@ -44,11 +45,7 @@ module.exports = function (coolie) {
       // 分块配置
       chunk: [],
       // js 压缩配置
-      minify: {
-        global_defs: {
-          DEBUG: false
-        }
-      }
+      minify: true
     },
 
     // html 构建

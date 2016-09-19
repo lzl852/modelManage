@@ -1,4 +1,4 @@
-var Basic = require('./js/app/basic.js');
-Basic.initialize();
-var Modes = require('./js/app/modes.js');
-Modes.init();
+  var basic = require('./js/app/basic.js');
+  var modes = require('./js/app/modes.js');
+  basic.initialize();
+  modes.init();

@@ -1,0 +1,148 @@
+html,body,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd,p,blockquote,pre,form,fieldset,table,th,td,input,textarea,hr,img,label,span,select,strong,b{margin:0; padding:0;}
+fieldset,img,abbr,acronym{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+caption,th,td{font-weight:normal; text-align:left;}
+a,img,button{border:none; text-decoration:none;}
+a,button{text-decoration:none;}
+a,img{border: none; outline:none;}
+a{color:#333; outline:none; text-decoration:none;}
+ul,ol{list-style:none;}
+html{ font-size: 62.5%;}
+body{color:#333; font-family: SimHei; /*font-family:"Helvetica Neue",Helvetica,Tahoma,sans-serif;*/ font-size:1.3rem; font-weight:normal; width: 100%;}
+.clearfix:after{ clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+.clearfix{ display: inline-table;}
+* html .clearfix{ height: 1%;}
+.clearfix{ display: block;}
+.ml12{ margin-left: 1.2rem}
+.tc{ text-align: center;}
+/*button*/
+.btn_yellow{display: block; width: 100%; height: 35px; line-height: 35px; background-color: #ff7d15; border-radius: 3px; text-align: center; color:#fff; font-size: 1.4rem; }
+.btn_red{ background-color: #680000; font-size: 1.6rem;}
+.btn_gray_100x35{ background-color:#f7f7f7; border:1px solid #ddd; cursor:pointer; color:#333; font-family:SimHei; font-size:14px; height:35px; line-height:35px; width:100px;}
+.btn_blue_100x35{ background-color:#0099cb; border:1px solid #0099cb; cursor:pointer; color:#fff; font-family:SimHei; font-size:14px; height:35px; line-height:35px; width:100px;}
+.page{max-width: 640px; min-width:320px; overflow-x: hidden; margin: 0 auto;}
+.header{padding: 2.5% 0 1.8%; margin-left: 3.9%;}
+.header .logo{display: block; width: 50%;}
+.header .logo img,.banner img{vertical-align: middle;}
+.header .logo img,.banner,.banner img{width: 100%;}
+.banner{position: relative;}
+.container{padding:4.1% 2.6% 2.8%; background-color: #00a0e9;}
+.item{width: 100%; margin-bottom: 1.2rem; position: relative;}
+.item .hd{width: 80%; margin: 0 auto;  text-align: center;  margin-bottom: 10px; color: #fff; }
+.item .hd span{position: relative; font-size: 1.8rem; padding: 0 30px; box-sizing: border-box; display:inline-block; max-width: 100%; overflow: hidden; white-space: nowrap;text-overflow: -o-ellipsis; text-overflow: ellipsis;}
+.item .hd span:before,.item .hd span:after{content: ""; position: absolute; width: 14px; height: 19px; top:50%;  margin-top:-9px; background: url(../images/title_bg.png) no-repeat; background-size: 49px 19px;}
+.item .hd span:before{left:0; background-position: 0 0;}
+.item .hd span:after{ right: 0; background-position: -35px 0;}
+.item .bd{ background-color: #fff; padding: 10px; box-sizing: border-box;}
+.intro .bd p{ line-height: 1.5;}
+.intro .bd .biger{font-size: 1.5rem;margin: 0.6rem 0;}
+/*产品*/
+.product .pro_mode1,.product .pro_mode2{width: 100%; box-sizing: border-box;}
+.product .pro_item{ float: left; width: 49.5%; box-sizing: border-box; background-color: #fff; padding: 10px;}
+.product .pro_item:nth-child(2){ margin-left: 1%;}
+.product .pro_item .pro_name,.product .pro_item .pro_num,.product .pro_item .pro_shouyi{ text-align: center;}
+.product .pro_item .pro_name{font-size: 1.6rem;}
+.product .pro_item .pro_num{ color: #ff7d15; font-size: 3rem; margin: 10px 0 0.2rem; position: relative;}
+.product .pro_num .icon_gongyi{ position: absolute; top: -10px; left: 50%; margin-left: -25px; background: url(../images/icon_gy.png)no-repeat; background-size: 100%; width: 50px;  height: 13px;}
+.product .pro_item .pro_shouyi{ color: #999;}
+.product .pro_item .pro_detail{ margin: 12px 0 12px 5px;}
+.product .pro_item .pro_detail li{line-height:1.8; color: #999;}
+.product .pro_item .pro_detail li span{color: #333;}
+.product .pro_mode2{ background-color: #fff; padding: 10px; margin-top: 1%; }
+.product .pro_mode2 .mode2_left{ width: 40%; padding: 0;}
+.product .pro_mode2 .mode2_right{ width: 55%; padding: 0; position: relative; margin-left: 5%;}
+.product .mode2_right .icon_mode2_gongyi{position: absolute; top: 0px; right: 0; background: url(../images/icon_gy.png)no-repeat; background-size: 100%; width: 50px;  height: 13px;}
+.product .mode2_right .pro_detail{margin-bottom:0.2rem;}
+/*优惠券*/
+.coupon .coupon_bd{width: 100%; box-sizing: border-box; background-color: #fff; padding: 1rem;}
+.coupon .coupon_bd .text_explain{ color: #000; text-align: center;}
+.coupon .coupon_box{ box-sizing:border-box; width: 100%;background: url(../images/coupon_bg.png) no-repeat; background-size: 100% 100%; margin: 1rem 0; color: #fff;}
+.coupon .coupon_left{ width: 43%; height:100%; float: left;}
+.coupon .coupon_left_wrap .coupon_name,.coupon .coupon_left_wrap .coupon_sum{position: absolute; top: 5%;overflow: hidden; white-space: nowrap;text-overflow: -o-ellipsis; text-overflow: ellipsis;width: 100%;}
+.coupon .coupon_left_wrap .yuan{position: absolute; right: 0; top: 62%;}
+.coupon .coupon_left_wrap .coupon_name{top: 5%;}
+.coupon .coupon_left_wrap .coupon_sum{ top: 30%; }
+.coupon .coupon_right{ width: 56%; height: 100%; float: left; margin-left: 1%;}
+.coupon .coupon_left_wrap{box-sizing: border-box;overflow: hidden;margin: auto; position: relative;width: 80%; height: 80%;  }
+.coupon .coupon_right_wrap{width: 90%; height: 100%;box-sizing: border-box;overflow: hidden;margin: auto; position: relative; }
+.coupon .coupon_right_wrap .coupon_rule{ width: 100%; height: calc(100% - 60px);height: -webkit-calc(100% - 60px);height: -moz-calc(100% - 60px); overflow: hidden;}
+.coupon .coupon_right_wrap .coupon_rule span{ display: block; max-height: 80%; overflow: hidden;}
+.coupon .coupon_right_wrap .coupon_rule small{display: block; max-height: 20%; overflow: hidden;}
+.coupon .coupon_right_wrap .btn_red{position: absolute; bottom: 5%;}
+.coupon .coupon_note{ line-height: 1.5;}
+.coupon .coupon_note h2{ color: #000;}
+/*排行榜*/
+.charts .bd{padding: 0;}
+.charts .charts_table{width: 100%; box-sizing: border-box; border-collapse: collapse; overflow: hidden;}
+.charts .charts_table th,td{border-bottom: 1px solid #ededed; padding: 0.8rem 0 0.8rem 1.5rem;}
+.charts .charts_table th{color: #999;}
+.charts .charts_text{text-align: center; color: #ff7d15; padding: 1rem 0;}
+
+/*抽奖*/
+.lot_intr{ line-height: 1.5;}
+.turntable{ margin: 1rem 0; position: relative;}
+.turntable .turntable_bg{ width: 100%;}
+.turntable_box{ position: absolute; width: 86%; left: 7%; top: 7%; box-sizing: border-box;}
+.turntable_layer .lottery_unit{ float: left; width: 32%; background-color: #fff;}
+.turntable_layer .lottery_unit_active{background-color: #f90;}
+.turntable_layer .lottery_unit img{width: 100%; vertical-align: top;}
+.turntable_layer .lottery_unit1,.turntable_layer .lottery_unit5{ margin: 0 2%;}
+.turntable_layer .lottery_unit3,.turntable_layer .lottery_unit7{ margin: 2% 0;}
+.turntable_layer .lottery_btn{ margin: 2%; background-color: #a31676; position: relative;}
+.btnbox_wrap{position: absolute; top: 5%; left: 5%; width: 90%; height: 90%; box-sizing: border-box;}
+.lottery_start{ text-align: center; margin:5% 0 2% 0; color:#fff600;}
+.lottery_start_tip{color: #fff; text-align: center; font-size: 1rem;}
+.turntable_reslut{ position: absolute; z-index: 99; width: 114%; margin-left: -7%; margin-top: -6%;}
+.turntable_reslut img{vertical-align: top; width: 100%;}
+.turntable_reslut_close{width: 8%; height: 10%; position: absolute; top: 2%; right: 3%}
+.hid{ display: none;}
+
+@media screen and (max-width: 359px) and (min-width: 320px){
+    .coupon .coupon_box{ height: 114px;}
+    .coupon .coupon_left_wrap{font-size: 1.6rem; margin-top: 10%; }
+    .coupon .coupon_left_wrap .coupon_sum strong{font-size: 5rem;}
+    .coupon .coupon_right_wrap .coupon_rule{font-size: 1.5rem; line-height: 1.5; margin-top: 10px; height: calc(100% - 50px);height: -webkit-calc(100% - 50px);height: -moz-calc(100% - 50px);}
+    .coupon .coupon_right_wrap .btn_red{;height: 30px; line-height: 30px; }
+    .coupon .coupon_right_wrap .coupon_rule span{ line-height: 1.2;}
+    .coupon .coupon_right_wrap .coupon_rule small{ line-height: 1.3;}
+}
+@media screen and (max-width: 479px) and (min-width: 360px){
+    .coupon .coupon_box{ height: 130px;}
+    .coupon .coupon_left_wrap{font-size: 1.5rem;margin-top: 10%; }
+    .coupon .coupon_left_wrap .coupon_sum strong{font-size: 6rem;}
+    .coupon .coupon_right_wrap .coupon_rule{font-size: 1.6rem; line-height: 1.5; margin-top: 9px;}
+    .coupon .coupon_right_wrap .btn_red{ margin-top: 4px;}
+    .coupon .coupon_right_wrap .coupon_rule span{ line-height: 1.2;}
+    .coupon .coupon_right_wrap .coupon_rule small{ line-height: 1.3;}
+    .lottery_start{ text-align: center; margin:5% 0 3% 0; color:#fff600;font-size: 2rem;}
+    .lottery_start_tip{font-size: 1.6rem;}
+}
+@media screen and (max-width: 639px) and (min-width: 480px){
+    .coupon .coupon_box{height: 172px;}
+    .coupon .coupon_left_wrap{font-size: 1.8rem; }
+    .coupon .coupon_left_wrap .coupon_name{top: 32%;}
+    .coupon .coupon_left_wrap .coupon_sum{ top: 50%; }
+    .coupon .coupon_left_wrap .yuan{ top: 81%;}
+    .coupon .coupon_left_wrap .coupon_sum strong{font-size: 7rem;}
+    .coupon .coupon_right_wrap .coupon_rule{font-size: 2rem; line-height: 1.8; margin-top: 9px;}
+    .coupon .coupon_right_wrap .btn_red{ margin-top: 5px;}
+    .coupon .coupon_right_wrap .coupon_rule span{ line-height: 1.1;}
+    .coupon .coupon_right_wrap .coupon_rule small{ line-height: 1.4;}
+    .lottery_start{ text-align: center; margin:5% 0 3% 0; color:#fff600;font-size: 2.5rem;}
+    .lottery_start_tip{font-size: 1.8rem;}
+}
+@media screen and (min-width: 640px){
+    .coupon .coupon_box{  height: 228px;}
+    .coupon .coupon_left_wrap{font-size: 1.8rem; }
+    .coupon .coupon_left_wrap .coupon_sum strong{font-size: 8rem;}
+    .coupon .coupon_left_wrap .coupon_name{top: 32%;}
+    .coupon .coupon_left_wrap .coupon_sum{ top: 50%; }
+    .coupon .coupon_left_wrap .yuan{ top: 81%;}
+    .coupon .coupon_right_wrap .coupon_rule{font-size: 2.3rem; line-height: 1.8; margin-top: 15px;}
+    .coupon .coupon_right_wrap .btn_red{ margin-top: 12px;}
+    .coupon .coupon_right_wrap .coupon_rule span{ line-height: 1.5;}
+    .coupon .coupon_right_wrap .coupon_rule small{ line-height: 1.6;}
+    .lottery_start{ text-align: center; margin:5% 0 3% 0; color:#fff600;font-size: 2.5rem;}
+    .lottery_start_tip{font-size: 1.8rem;}
+}

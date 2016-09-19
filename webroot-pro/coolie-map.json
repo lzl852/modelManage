@@ -1,6 +1,15 @@
 {
   "/index.html": {
-    "main": [],
+    "main": [
+      {
+        "src": "../webroot-dev/main.js",
+        "dest": "/static/js/main/6c4bdf0c28fdc4a1843bc23e90b85c16.js",
+        "deps": [
+          "../webroot-dev/js/app/basic.js",
+          "../webroot-dev/js/app/modes.js"
+        ]
+      }
+    ],
     "js": [
       {
         "dest": "/static/js/c91e1b71a80dea21bed0b3c0ff2574a7.js",
@@ -15,9 +24,27 @@
         ]
       },
       {
-        "dest": "/static/js/dedb2d8ef604768868878ea764091a68.js",
+        "dest": "/static/js/aa873d4e04e2c614d0ff324b5ace8e32.js",
         "deps": [
-          "../webroot-dev/js/basic.js"
+          "../webroot-dev/js/jquery.nicescroll.js"
+        ]
+      },
+      {
+        "dest": "/static/js/b071e0c787d2485e4b848bfb43a035a9.js",
+        "deps": [
+          "../webroot-dev/js/pickacolor/tinycolor-0.9.15.min.js"
+        ]
+      },
+      {
+        "dest": "/static/js/ac9491271afd872cc9a200a76e8ce161.js",
+        "deps": [
+          "../webroot-dev/js/pickacolor/pick-a-color-1.2.3.min.js"
+        ]
+      },
+      {
+        "dest": "/static/js/58f5ebd0bd081603d3e0742680be32c4.js",
+        "deps": [
+          "../webroot-dev/node_modules/coolie.js/coolie.js"
         ]
       }
     ],
@@ -53,7 +80,7 @@
         ]
       },
       {
-        "dest": "/static/css/262ae89a2003680a9ee37b1c006a2bdc.css",
+        "dest": "/static/css/69a7a63db5a3d62e3432803f850c6b8a.css",
         "deps": [
           {
             "src": "../webroot-dev/css/index.css",
@@ -62,14 +89,17 @@
             ]
           }
         ]
+      },
+      {
+        "dest": "/static/css/e2a9b2d1cd8c18417aca864b60938e9e.css",
+        "deps": [
+          {
+            "src": "../webroot-dev/js/pickacolor/pick-a-color-1.2.3.min.css",
+            "res": []
+          }
+        ]
       }
     ],
-    "res": [
-      "../webroot-dev/images/mode_01.jpg",
-      "../webroot-dev/images/mode_02.jpg",
-      "../webroot-dev/images/mode_03.jpg",
-      "../webroot-dev/images/mode_04.jpg",
-      "../webroot-dev/images/mode_05.jpg"
-    ]
+    "res": []
   }
 }
