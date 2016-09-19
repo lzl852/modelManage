@@ -82,7 +82,32 @@ define(function (require, exports, module) {
         dataType: "json",
         success: function (data) {
           // 2、插入uedit
-          console.log(data.htm); //TODO:待完成
+          console.log(data.code); //TODO:待完成
+          //var value = prompt('插入html代码', '');
+
+          var value = data.code;
+          UE.getEditor('rightContent').execCommand('cleardoc');
+          UE.getEditor('rightContent').execCommand('insertHtml', value);
+          addSheetFile()
+            //动态加载css文件
+          function addSheetFile(path) {
+            var fileref = document.createElement("link");
+            fileref.rel = "stylesheet";
+            fileref.type = "text/css";
+            fileref.href = "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/css/super_min_a2275124.css";
+            var headobj = document.getElementsByTagName('head')[0];
+            headobj.appendChild(fileref);
+          }
+
+          //加载js，放在整个项目的头部
+          UE.utils.loadFile(document, {
+            src: data.src,
+            tag: "script",
+            type: "text/javascript",
+            defer: "defer"
+          }, function () {
+            console.log('加载成功');
+          });
         }
       })
     }
