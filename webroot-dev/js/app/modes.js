@@ -57,7 +57,7 @@ define(function (require, exports, module) {
       var mask = "<div class=\"img-mask\">" + "<div class=\"img-mask-box\">" + "<h3 class=\"img-mask-name\"></h3>" + "<i class=\"fa fa-file-text-o icon_edit\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"插入编辑器\"></i>" + "</div></div>";
 
       // 1、鼠标悬停移出效果
-      $("#style1>ul>li").hover(function () {
+      $("#style1>ul>li,#style2>ul>li").hover(function () {
         var mode_name = $(this).attr('data-modeName');
         var _this = $(this);
         _this.append(mask);
