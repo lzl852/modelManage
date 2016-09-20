@@ -105,7 +105,7 @@ define(function (require, exports, module) {
             console.log('JS,加载成功');
           });
 
-          UE.getEditor('rightContent').execCommand('cleardoc');
+         // UE.getEditor('rightContent').execCommand('cleardoc');
           UE.getEditor('rightContent').execCommand('insertHtml', value);
         }
       })
