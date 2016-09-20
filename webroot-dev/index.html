@@ -73,7 +73,7 @@
         <!--按钮组 start-->
         <div class="btn-group-vertical right-sidebar">
           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#setColor"><i class="fa fa-eye"></i> 背景色</button>
-          <button type="button" class="btn btn-default" data-toggle="tooltip" data-html="true" data-container="body" data-placement="right" title data-original-title="保存前可<br/>以先预览"><i class="fa fa-search"></i> 预览</button>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#preview"><i class="fa fa-search"></i> 预览</button>
           <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-save"></i> 保存</button>
           <button type="button" class="btn btn-default"><i class="fa fa-trash"></i> 清空</button>
         </div>
@@ -90,30 +90,48 @@
     </div>
   </div>
   <!--页脚 end-->
-  <!-- 模态框（Modal） -->
-  <div class="modal fade" id="setColor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <!-- 预览模态框（Modal） -->
+  <div class="modal modal-preview fade"  id="preview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            &times;
-          </button>
-          <h4 class="modal-title" id="myModalLabel">
-         设置页面主体背景颜色
-     </h4>
+      <div class="modal-content modal-content-preview">
+        <div class="modal-content-preview-btn">
+            <button type="button" class="preview-close" style="" data-dismiss="modal"><span class="preview-guanbi">关闭 ×</span></button>
         </div>
-        <div class="modal-body">
-          <input type="text" value="选择颜色" name="border-color" class="pick-a-color form-control" id="pickaColor">
+        <div class="modal-body modal-body-preview">
+            <div class="preview-phone">
+                <div class="preview-body">
+                    ppppppppppppp
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-          </button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">
-            提交更改
-          </button>
-        </div>
+
       </div>
     </div>
+  </div>
+  <!-- 设置背景色模态框（Modal） -->
+  <div class="modal fade" id="setColor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      &times;
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">
+                      设置页面主体背景颜色
+                  </h4>
+              </div>
+              <div class="modal-body">
+                  <input type="text" value="选择颜色" name="border-color" class="pick-a-color form-control" id="pickaColor">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                  </button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                      提交更改
+                  </button>
+              </div>
+          </div>
+      </div>
   </div>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
