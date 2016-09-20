@@ -90,16 +90,16 @@
         //,indentValue:'2em'
 
         //,initialFrameWidth:1000  //初始化编辑器宽度,默认1000
-        //,initialFrameHeight:320  //初始化编辑器高度,默认320
+        ,initialFrameHeight:800  //初始化编辑器高度,默认320
 
         //,readonly : false //编辑器初始化结束后,编辑区域是否是只读的，默认是false
 
         //,autoClearEmptyNode : true //getContent时，是否删除空的inlineElement节点（包括嵌套的情况）
 
         //启用自动保存
-        //,enableAutoSave: true
+        ,enableAutoSave: false
         //自动保存间隔时间， 单位ms
-        //,saveInterval: 500
+        ,saveInterval: 6000
 
         //,fullscreen : false //是否开启初始化时即全屏，默认关闭
 
@@ -188,12 +188,12 @@
         //    { label:'',name:'arialBlack',val:'arial black,avant garde'},
         //    { label:'',name:'comicSansMs',val:'comic sans ms'},
         //    { label:'',name:'impact',val:'impact,chicago'},
-        //    { label:'',name:'timesNewRoman',val:'times new roman'}
+        //  { label:'',name:'timesNewRoman',val:'times new roman'}
         //]
 
         //fontsize
         //字号
-        //,'fontsize':[10, 11, 12, 14, 16, 18, 20, 24, 36]
+        ,'fontsize':[10, 11, 12, 14, 16, 18, 20, 24, 36]
 
         //paragraph
         //段落格式 值留空时支持多语言自动识别，若配置，则以配置值为准
@@ -247,10 +247,10 @@
 
         //elementPathEnabled
         //是否启用元素路径，默认是显示
-        //,elementPathEnabled : true
+        ,elementPathEnabled : false
 
         //wordCount
-        //,wordCount:true          //是否开启字数统计
+        ,wordCount:false          //是否开启字数统计
         //,maximumWords:10000       //允许的最大字符数
         //字数统计提示，{#count}代表当前字数，{#leave}代表还可以输入多少字符数,留空支持多语言自动切换，否则按此配置显示
         //,wordCountMsg:''   //当前已输入 {#count} 个字符，您还可以输入{#leave} 个字符
@@ -271,30 +271,31 @@
 
         //undo
         //可以最多回退的次数,默认20
-        //,maxUndoCount:20
+        ,maxUndoCount:20
         //当输入的字符数超过该值时，保存一次现场
         //,maxInputCount:1
 
         //autoHeightEnabled
         // 是否自动长高,默认true
-        //,autoHeightEnabled:true
+        ,autoHeightEnabled:false
 
         //scaleEnabled
         //是否可以拉伸长高,默认true(当开启时，自动长高失效)
-        //,scaleEnabled:false
+        ,scaleEnabled:false
+        ,imageScaleEnabled:false
         //,minFrameWidth:800    //编辑器拖动时最小宽度,默认800
         //,minFrameHeight:220  //编辑器拖动时最小高度,默认220
 
         //autoFloatEnabled
         //是否保持toolbar的位置不动,默认true
-        //,autoFloatEnabled:true
+        ,autoFloatEnabled:false
         //浮动时工具栏距离浏览器顶部的高度，用于某些具有固定头部的页面
         //,topOffset:30
         //编辑器底部距离工具栏高度(如果参数大于等于编辑器高度，则设置无效)
         //,toolbarTopOffset:400
 
         //设置远程图片是否抓取到本地保存
-        //,catchRemoteImageEnable: true //设置是否抓取远程图片
+        ,catchRemoteImageEnable: true //设置是否抓取远程图片
 
         //pageBreakTag
         //分页标识符,默认是_ueditor_page_break_tag_
@@ -302,23 +303,23 @@
 
         //autotypeset
         //自动排版参数
-        //,autotypeset: {
+        ,autotypeset: {
         //    mergeEmptyline: true,           //合并空行
         //    removeClass: true,              //去掉冗余的class
         //    removeEmptyline: false,         //去掉空行
         //    textAlign:"left",               //段落的排版方式，可以是 left,right,center,justify 去掉这个属性表示不执行排版
-        //    imageBlockLine: 'center',       //图片的浮动方式，独占一行剧中,左右浮动，默认: center,left,right,none 去掉这个属性表示不执行排版
+        //    imageBlockLine: false,          //图片的浮动方式，独占一行剧中,左右浮动，默认: center,left,right,none 去掉这个属性表示不执行排版
         //    pasteFilter: false,             //根据规则过滤没事粘贴进来的内容
-        //    clearFontSize: false,           //去掉所有的内嵌字号，使用编辑器默认的字号
-        //    clearFontFamily: false,         //去掉所有的内嵌字体，使用编辑器默认的字体
-        //    removeEmptyNode: false,         // 去掉空节点
+              clearFontSize: false,           //去掉所有的内嵌字号，使用编辑器默认的字号
+              clearFontFamily: false,         //去掉所有的内嵌字体，使用编辑器默认的字体
+              removeEmptyNode: false,         // 去掉空节点
         //    //可以去掉的标签
         //    removeTagNames: {标签名字:1},
         //    indent: false,                  // 行首缩进
         //    indentValue : '2em',            //行首缩进的大小
-        //    bdc2sb: false,
-        //    tobdc: false
-        //}
+              bdc2sb: false,
+              tobdc: false
+        }
 
         //tableDragable
         //表格是否可以拖拽
@@ -329,7 +330,7 @@
         //sourceEditor
         //源码的查看方式,codemirror 是代码高亮，textarea是文本框,默认是codemirror
         //注意默认codemirror只能在ie8+和非ie中使用
-        //,sourceEditor:"codemirror"
+          ,sourceEditor:"codemirror"
         //如果sourceEditor是codemirror，还用配置一下两个参数
         //codeMirrorJsUrl js加载的路径，默认是 URL + "third-party/codemirror/codemirror.js"
         //,codeMirrorJsUrl:URL + "third-party/codemirror/codemirror.js"
@@ -353,7 +354,7 @@
         //默认过滤规则相关配置项目
         //,disabledTableInTable:true  //禁止表格嵌套
         //,allowDivTransToP:true      //允许进入编辑器的div标签自动变成p标签
-        //,rgb2Hex:true               //默认产出的数据中的color自动从rgb格式变成16进制格式
+          ,rgb2Hex:true               //默认产出的数据中的color自动从rgb格式变成16进制格式
 
 		// xss 过滤是否开启,inserthtml等操作
 		,xssFilterRules: true
