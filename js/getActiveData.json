@@ -1,0 +1,9 @@
+{
+    "modes": [
+        {
+            "mode_id":1,
+            "mode_name":"活动模板1",
+            "mode_img":"images/active_01.jpg"
+        }
+    ]
+}
