@@ -57,8 +57,13 @@
         $('.con-right').height($('#container').height());
         /*   $('#edui1_iframeholder').height($('#container').height() - $('#edui1_toolbarbox').height() - $('#edui1_bottombar').height());*/
       },
+        /*编辑区的高度，#container的高度-edui1_toolbarbox的高度*/
+      _ueditHeight:function(){
+          return $('#container').height() - 127;
+      },
       /*实例化编辑器*/
       _uEditor: function () {
+        var self =this;
         var ue = UE.getEditor('rightContent', {
          /* toolbars: [
             ['source','undo', 'redo']
@@ -66,7 +71,7 @@
           autoHeightEnabled: false,
           autoFloatEnabled: true,
           initialFrameWidth: '100%',
-          initialFrameHeight:'436'
+          initialFrameHeight : self._ueditHeight()
         });
 
         // var html ="<i >ddd</i>";
