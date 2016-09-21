@@ -5,6 +5,18 @@
             "code": "<header class=\"header\"><a class=\"logo\" href=\"#\"><img src=\"http://feddd.me/yht/activity1/images/logo.png\" alt=\"鑫合汇\"/></a></header><!--header end--><!--banner--><div class=\"banner\"><img src=\"http://feddd.me/yht/activity1/images/banner.jpg\" alt=\"banner\"/></div><!--banner end-->",
             "src":"http://feddd.me/yht/activity1/js/lottery.js",
             "css":"http://feddd.me/yht/activity1/css/base.css"
+        },
+        {
+            "mode_id":2,
+            "code": "<header class=\"header\"><a class=\"logo\" href=\"#\"><img src=\"http://feddd.me/yht/activity1/images/logo.png\" alt=\"鑫合汇\"/></a></header><!--header end--><!--banner--><div class=\"banner\"><img src=\"http://feddd.me/yht/activity1/images/banner.jpg\" alt=\"banner\"/></div><!--banner end-->",
+            "src":"http://feddd.me/yht/activity1/js/lottery.js",
+            "css":"http://feddd.me/yht/activity1/css/base.css"
+        },
+        {
+            "mode_id":3,
+            "code": "<header class=\"header\"><a class=\"logo\" href=\"#\"><img src=\"http://feddd.me/yht/activity1/images/logo.png\" alt=\"鑫合汇\"/></a></header><!--header end--><!--banner--><div class=\"banner\"><img src=\"http://feddd.me/yht/activity1/images/banner.jpg\" alt=\"banner\"/></div><!--banner end-->",
+            "src":"http://feddd.me/yht/activity1/js/lottery.js",
+            "css":"http://feddd.me/yht/activity1/css/base.css"
         }
 
     ]

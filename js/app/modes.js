@@ -78,32 +78,30 @@ define(function (require, exports, module) {
       // 1、ajax取出数据
       $.ajax({
         type: "get",
-         url: params.url_htm,
-       // url: params.url_html_mode,
-        data: { "mode_id": modeId },
-       // data: {"mode_id": modeId },
+        // url: params.url_htm,
+        url: params.url_html_mode,
+        data: {"mode_id": modeId },
         dataType: "json",
         success: function (data) {
           // 2、插入uedit
-          //TODO:待完成
           //var value = prompt('插入html代码', '');
-         // var value = data.modes.code;
          var value = data.code;
+        // var value = data.code;
           var iframeDom = document.getElementById("ueditor_0").contentWindow.document;
           //加载css，放在整个项目的头部
           UE.utils.loadFile(iframeDom, {
             tag: "link",
             rel: "stylesheet",
             type: "text/css",
-           // href: data.modes.css
-              href: data.css
+            href: data.modes.css
+             // href: data.css
           }, function () {
             console.log('css,加载成功');
           });
           //加载js，放在整个项目的头部
           UE.utils.loadFile(iframeDom, {
-           // src: data.modes.src,
-            src: data.src,
+            src: data.modes.src,
+           // src: data.src,
             tag: "script",
             type: "text/javascript",
             defer: "defer"
