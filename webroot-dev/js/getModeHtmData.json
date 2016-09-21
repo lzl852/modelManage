@@ -2,15 +2,15 @@
     "modes":[
         {
             "mode_id":1,
-            "code": "<header class=\"header\"><a class=\"logo\" href=\"#\"><img src=\"http://feddd.me/yht/activity1/images/logo.png\" alt=\"鑫合汇\"/></a></header><!--header end--><!--banner--><div class=\"banner\"><img src=\"http://feddd.me/yht/activity1/images/banner.jpg\" alt=\"banner\"/></div><!--banner end-->",
-            "src":"http://feddd.me/yht/activity1/js/lottery.js",
-            "css":"http://feddd.me/yht/activity1/css/base.css"
+            "code": "<!--头部开始--><div class=\"mode1-header\"><a class=\"logo\" href=\"#\"><img src=\"http://feddd.me/yht/activity1/images/logo.png\" alt=\"鑫合汇\"/></a></div><!--头部结束--><!--banner开始--><div class=\"mode1-banner\"><img src=\"http://feddd.me/yht/activity1/images/banner.jpg\"alt=\"banner\"/></div><!--banner结束-->",
+            "src":"",
+            "css":"http://feddd.me/yht/modes/mode1_header/css/style.css"
         },
         {
             "mode_id":2,
-            "code": "<header class=\"header\"><a class=\"logo\" href=\"#\"><img src=\"http://feddd.me/yht/activity1/images/logo.png\" alt=\"鑫合汇\"/></a></header><!--header end--><!--banner--><div class=\"banner\"><img src=\"http://feddd.me/yht/activity1/images/banner.jpg\" alt=\"banner\"/></div><!--banner end-->",
-            "src":"http://feddd.me/yht/activity1/js/lottery.js",
-            "css":"http://feddd.me/yht/activity1/css/base.css"
+            "code": "<!--活动简介开始--><div class=\"mode1_container mt-15\"><div class=\"item intro\"><div class=\"hd\"><span>活动介绍标题</span></div><div class=\"bd\"><p class=\"normal\">什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档什么是鑫拍档</p><div class=\"biger\"><p id=\"introAd\">名额有限，先到先得！<br/>预约提醒，助你一臂之力！</p></div><a href=\"javascript:void (0);\"class=\"btn_ff7d15\">成为鑫拍档</a></div></div></div><!--活动简介结束-->",
+            "src":"",
+            "css":"http://feddd.me/yht/modes/mode1_activeIntroduction/css/style.css"
         },
         {
             "mode_id":3,

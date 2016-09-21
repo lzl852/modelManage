@@ -68,7 +68,7 @@ define(function (require, exports, module) {
       });
 
       // 2、监听点击事件，用于点击后插入数据到uedit
-      $("ul.con-left-bd-main-box").on("click", ".icon_edit", function (e) {
+      params.cont_node.find("ul.con-left-bd-main-box").on("click", ".icon_edit", function (e) {
         var mode_id = $(this).parents('li').attr('data-modeId');
         _self.insertToUedit(params, mode_id); // 插入数据到uedit
       });
@@ -85,32 +85,46 @@ define(function (require, exports, module) {
         success: function (data) {
           // 2、插入uedit
           //var value = prompt('插入html代码', '');
-         var value = data.code;
-        // var value = data.code;
-          var iframeDom = document.getElementById("ueditor_0").contentWindow.document;
-          //加载css，放在整个项目的头部
-          UE.utils.loadFile(iframeDom, {
-            tag: "link",
-            rel: "stylesheet",
-            type: "text/css",
-            href: data.modes.css
-             // href: data.css
-          }, function () {
-            console.log('css,加载成功');
-          });
-          //加载js，放在整个项目的头部
-          UE.utils.loadFile(iframeDom, {
-            src: data.modes.src,
-           // src: data.src,
-            tag: "script",
-            type: "text/javascript",
-            defer: "defer"
-          }, function () {
-            console.log('JS,加载成功');
-          });
-
-         // UE.getEditor('rightContent').execCommand('cleardoc');
-          UE.getEditor('rightContent').execCommand('insertHtml', value);
+            var iframeDom = document.getElementById("ueditor_0").contentWindow.document;
+            var modes = data.modes;
+            for(var i=0;i<modes.length;i++){
+                var mode = modes[i];
+                var mode_id = mode.mode_id;
+                var code = mode.code;
+                var src = mode.src;
+                var css = mode.css;
+                if(modeId == mode_id){
+                 //加载reset css，放在整个项目的头部
+                 UE.utils.loadFile(iframeDom, {
+                     tag: "link",
+                     rel: "stylesheet",
+                     type: "text/css",
+                     href: "http://feddd.me/yht/modes/mode1_header/css/reset.css"
+                 }, function () {
+                     console.log('css,加载成功');
+                 });
+                //加载css，放在整个项目的头部
+                  UE.utils.loadFile(iframeDom, {
+                    tag: "link",
+                    rel: "stylesheet",
+                    type: "text/css",
+                    href: css
+                  }, function () {
+                    console.log('css,加载成功');
+                  });
+                  //加载js，放在整个项目的头部
+                  UE.utils.loadFile(iframeDom, {
+                    src: src,
+                    tag: "script",
+                    type: "text/javascript",
+                    defer: "defer"
+                  }, function () {
+                    console.log('JS,加载成功');
+                  });
+                    // UE.getEditor('rightContent').execCommand('cleardoc');
+                    UE.getEditor('rightContent').execCommand('insertHtml', code);
+                }
+            }
         }
       })
     }
