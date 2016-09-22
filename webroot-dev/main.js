@@ -5,5 +5,5 @@
   modes.init({
       cont_node: $('#activityMode'),
       url_modes: "js/getActiveData.json",
-      url_htm: "js/getHtmData.json"
+      url_htm: "js/getModesHtmData.json"
   })
