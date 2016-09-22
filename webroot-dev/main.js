@@ -3,7 +3,7 @@
   basic.initialize();
   modes.init();
   modes.init({
-      cont_node: $('#style2'),
+      cont_node: $('#activityMode'),
       url_modes: "js/getActiveData.json",
       url_htm: "js/getHtmData.json"
   })

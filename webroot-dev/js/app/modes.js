@@ -10,7 +10,7 @@ define(function (require, exports, module) {
       var _self = this;
       // 1、定义默认值
       var defaults = {
-        cont_node: $('#style1'),
+        cont_node: $('#defalutMode'),
         url_modes: "js/getModesData.json",
         url_htm: "js/getHtmData.json",
         url_html_mode:"js/getModeHtmData.json"
@@ -58,7 +58,7 @@ define(function (require, exports, module) {
       var mask = "<div class=\"img-mask\">" + "<div class=\"img-mask-box\">" + "<h3 class=\"img-mask-name\"></h3>" + "<i class=\"fa fa-file-text-o icon_edit\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"插入编辑器\"></i>" + "</div></div>";
 
       // 1、鼠标悬停移出效果
-      $("#style1>ul>li,#style2>ul>li").hover(function () {
+      $("#defalutMode>ul>li,#activityMode>ul>li").hover(function () {
         var mode_name = $(this).attr('data-modeName');
         var _this = $(this);
         _this.append(mask);
@@ -100,8 +100,6 @@ define(function (require, exports, module) {
                      rel: "stylesheet",
                      type: "text/css",
                      href: "http://feddd.me/yht/modes/mode1_header/css/reset.css"
-                 }, function () {
-                     console.log('css,加载成功');
                  });
                 //加载css，放在整个项目的头部
                   UE.utils.loadFile(iframeDom, {
@@ -118,8 +116,6 @@ define(function (require, exports, module) {
                         tag: "script",
                         type: "text/javascript",
                         defer: "defer"
-                    }, function () {
-                        console.log('JS,加载成功');
                     });
                   //加载js，放在整个项目的头部
                   UE.utils.loadFile(iframeDom, {
