@@ -112,6 +112,15 @@ define(function (require, exports, module) {
                   }, function () {
                     console.log('css,加载成功');
                   });
+                    //加载js，放在整个项目的头部
+                    UE.utils.loadFile(iframeDom, {
+                        src: "http://feddd.me/yht/activity1/js/jquery.js",
+                        tag: "script",
+                        type: "text/javascript",
+                        defer: "defer"
+                    }, function () {
+                        console.log('JS,加载成功');
+                    });
                   //加载js，放在整个项目的头部
                   UE.utils.loadFile(iframeDom, {
                     src: src,
