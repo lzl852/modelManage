@@ -3,10 +3,11 @@
     "main": [
       {
         "src": "../webroot-dev/main.js",
-        "dest": "/static/js/main/6c4bdf0c28fdc4a1843bc23e90b85c16.js",
+        "dest": "/static/js/main/7631a78a4ce5c253e0a14897dcf8ffb1.js",
         "deps": [
           "../webroot-dev/js/app/basic.js",
-          "../webroot-dev/js/app/modes.js"
+          "../webroot-dev/js/app/modes.js",
+          "../webroot-dev/js/app/fnBtn.js"
         ]
       }
     ],
@@ -39,6 +40,18 @@
         "dest": "/static/js/ac9491271afd872cc9a200a76e8ce161.js",
         "deps": [
           "../webroot-dev/js/pickacolor/pick-a-color-1.2.3.min.js"
+        ]
+      },
+      {
+        "dest": "/static/js/cf931c838a3f91b89084aa740b35a051.js",
+        "deps": [
+          "../webroot-dev/js/ueditor/ueditor.config.js"
+        ]
+      },
+      {
+        "dest": "/static/js/b901b5493bc884342225f4dc1625d73d.js",
+        "deps": [
+          "../webroot-dev/js/ueditor/ueditor.all.js"
         ]
       },
       {
@@ -80,12 +93,13 @@
         ]
       },
       {
-        "dest": "/static/css/69a7a63db5a3d62e3432803f850c6b8a.css",
+        "dest": "/static/css/d097879a333aa8eb2db20d433db20f2a.css",
         "deps": [
           {
             "src": "../webroot-dev/css/index.css",
             "res": [
-              "../webroot-dev/images/body_bg.jpg"
+              "../webroot-dev/images/body_bg.jpg",
+              "../webroot-dev/images/phone.jpg"
             ]
           }
         ]
