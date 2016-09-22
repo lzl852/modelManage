@@ -72,7 +72,8 @@ input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { color: #c
 .modal-content-preview-btn .preview-close{color:#FFF;opacity:1;margin: 2px;float: none; background: transparent;}
 .modal-content-preview-btn .preview-guanbi{width: 50px;display: inline-block;font-size: 16px; font-weight: bold;}
 .preview-phone .preview-body{ margin-top: 90px; height: 499px;padding: 15px 12px;overflow-x: hidden; overflow-y: auto;}
-
+#activityMode .con-left-bd-main-box li,#activityMode .con-left-bd-main-box .img-mask{height: 600px;}
+#activityMode .con-left-bd-main-box .img-box img{width: 100%; height: 100%;}
 /*footer*/
 .footer{position: fixed; bottom: 0; width: 100%; height: 40px; line-height: 40px; background: rgba(0, 0, 0, 0.25); }
 .copyright{color: #ccc;}

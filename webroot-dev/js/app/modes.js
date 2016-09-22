@@ -10,9 +10,10 @@ define(function (require, exports, module) {
       var _self = this;
       // 1、定义默认值
       var defaults = {
-        cont_node: $('#style1'),
+        cont_node: $('#defalutMode'),
         url_modes: "js/getModesData.json",
-        url_htm: "js/getHtmData.json"
+        url_htm: "js/getHtmData.json",
+        url_html_mode:"js/getModeHtmData.json"
       };
       // 2、用入参扩展defaults
       var _params = $.extend(defaults, params);
@@ -57,7 +58,7 @@ define(function (require, exports, module) {
       var mask = "<div class=\"img-mask\">" + "<div class=\"img-mask-box\">" + "<h3 class=\"img-mask-name\"></h3>" + "<i class=\"fa fa-file-text-o icon_edit\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"插入编辑器\"></i>" + "</div></div>";
 
       // 1、鼠标悬停移出效果
-      $("#style1>ul>li").hover(function () {
+      $("#defalutMode>ul>li,#activityMode>ul>li").hover(function () {
         var mode_name = $(this).attr('data-modeName');
         var _this = $(this);
         _this.append(mask);
@@ -67,7 +68,7 @@ define(function (require, exports, module) {
       });
 
       // 2、监听点击事件，用于点击后插入数据到uedit
-      $("ul.con-left-bd-main-box").on("click", ".icon_edit", function (e) {
+      params.cont_node.find("ul.con-left-bd-main-box").on("click", ".icon_edit", function (e) {
         var mode_id = $(this).parents('li').attr('data-modeId');
         _self.insertToUedit(params, mode_id); // 插入数据到uedit
       });
@@ -77,36 +78,58 @@ define(function (require, exports, module) {
       // 1、ajax取出数据
       $.ajax({
         type: "get",
-        url: params.url_htm,
-        data: { "mode_id": modeId },
+        // url: params.url_htm,
+        url: params.url_html_mode,
+        data: {"mode_id": modeId },
         dataType: "json",
         success: function (data) {
           // 2、插入uedit
-          //TODO:待完成
           //var value = prompt('插入html代码', '');
-          var value = data.code;
-          var iframeDom = document.getElementById("ueditor_0").contentWindow.document;
-          //加载css，放在整个项目的头部
-          UE.utils.loadFile(iframeDom, {
-            tag: "link",
-            rel: "stylesheet",
-            type: "text/css",
-            href: data.css
-          }, function () {
-            console.log('css,加载成功');
-          });
-          //加载js，放在整个项目的头部
-          UE.utils.loadFile(iframeDom, {
-            src: data.src,
-            tag: "script",
-            type: "text/javascript",
-            defer: "defer"
-          }, function () {
-            console.log('JS,加载成功');
-          });
-
-         // UE.getEditor('rightContent').execCommand('cleardoc');
-          UE.getEditor('rightContent').execCommand('insertHtml', value);
+            var iframeDom = document.getElementById("ueditor_0").contentWindow.document;
+            var modes = data.modes;
+            for(var i=0;i<modes.length;i++){
+                var mode = modes[i];
+                var mode_id = mode.mode_id;
+                var code = mode.code;
+                var src = mode.src;
+                var css = mode.css;
+                if(modeId == mode_id){
+                 //加载reset css，放在整个项目的头部
+                 UE.utils.loadFile(iframeDom, {
+                     tag: "link",
+                     rel: "stylesheet",
+                     type: "text/css",
+                     href: "http://feddd.me/yht/modes/mode1_header/css/reset.css"
+                 });
+                //加载css，放在整个项目的头部
+                  UE.utils.loadFile(iframeDom, {
+                    tag: "link",
+                    rel: "stylesheet",
+                    type: "text/css",
+                    href: css
+                  }, function () {
+                    console.log('css,加载成功');
+                  });
+                    //加载js，放在整个项目的头部
+                    UE.utils.loadFile(iframeDom, {
+                        src: "http://feddd.me/yht/activity1/js/jquery.js",
+                        tag: "script",
+                        type: "text/javascript",
+                        defer: "defer"
+                    });
+                  //加载js，放在整个项目的头部
+                  UE.utils.loadFile(iframeDom, {
+                    src: src,
+                    tag: "script",
+                    type: "text/javascript",
+                    defer: "defer"
+                  }, function () {
+                    console.log('JS,加载成功');
+                  });
+                    // UE.getEditor('rightContent').execCommand('cleardoc');
+                    UE.getEditor('rightContent').execCommand('insertHtml', code);
+                }
+            }
         }
       })
     }
